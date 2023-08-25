@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bicyle</title>
+    <link rel="icon" href="assets/images/logo.gif" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--- preload images -->
+    <link rel="preload" as="image" href="/assets/images/hero.gif" />
+  </head>
+
+  <body>
+    <!-- #HEADER-->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="/assets/images/logo.gif" alt="Cycle Logo" />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img src="assets/images/logo.gif" alt="Logo" />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li>
+              <a href="#features" class="navbar-link" data-nav-link>Features</a>
+            </li>
+
+            <li>
+              <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!--- #HERO-->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle has-before">
+                Wellcome to Bicycle's World
+              </p>
+
+              <h1 class="h1 hero-title">"Discover the Perfect Ride!"</h1>
+
+              <p class="hero-text">
+                "Introducing Bicycles, where cutting-edge design meets unmatched
+                performance. Your riding experience will be elevated with our
+                bicycles, whether you're a commuter or an adventurer."
+              </p>
+
+              <div class="btn-group">
+                <button href="#" class="btn btn-primary">Explore</button>
+              </div>
+            </div>
+
+            <figure
+              class="hero-banner has-before img-holder"
+              style="--width: 650; --height: 650"
+            >
+              <img
+                src="/assets/images/hero.gif"
+                width="650"
+                height="650"
+                alt="hero banner"
+                class="img-cover"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!--- #ABOUT-->
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="assets/images/feature.gif"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="about-content">
+              <h2 class="h2-sm section-title">Description of specifications</h2>
+
+              <ul class="about-list">
+                <li class="has-before">Hard Frame Material</li>
+
+                <li class="has-before">Long-travel suspension</li>
+
+                <li class="has-before">Available Various Colors</li>
+              </ul>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary">Know More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--- #feature-->
+
+        <section class="section feature" id="feature" aria-label="feature">
+          <div class="container">
+            <p class="section-subtitle text-center">-What We Offer-</p>
+
+            <h2 class="h2 section-title text-center">Our features</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="feature-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="assets/images/design.jpg"
+                      loading="lazy"
+                      alt="UI/UX Creative Design"
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Sleek and Stylish Design</h3>
+
+                    <p class="card-text">
+                      "Bicycle boasts a modern, eye-catching design that's bound
+                      to turn heads on the road.."
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/performance.jpg"
+                      loading="lazy"
+                      alt=""
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Advanced Performance</h3>
+
+                    <p class="card-text">
+                      "With precision engineering and top-notch components, our
+                      bicycles deliver smooth rides and optimal handling."
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/durablejpg.jpg"
+                      loading="lazy"
+                      alt=""
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Durable Build</h3>
+
+                    <p class="card-text">
+                      "Crafted from high-quality materials, Bicycle is built to
+                      withstand various terrains and weather conditions"
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/comfort.jpg"
+                      loading="lazy"
+                      alt="Graphic Design"
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Comfortable Ergonomics</h3>
+
+                    <p class="card-text">
+                      "Thoughtfully designed for rider comfort, our bicycles
+                      offer adjustable features and a comfortable riding
+                      posture"
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="features.html" class="btn btn-primary">More</a>
+          </div>
+        </section>
+
+        <!--- #FOOTER-->
+
+        <footer class="footer" id="footer">
+          <div class="footer-top section">
+            <div class="container">
+              <div class="footer-brand">
+                <a href="#" class="logo">
+                  <img src="assets/images/logo.gif" alt=" Logo" />
+                </a>
+
+                <p class="footer-text footer-list-title">Bicycle Zone</p>
+
+                <form action="" class="newsletter-form">
+                  <input
+                    type="email"
+                    name="email_address"
+                    placeholder="Enter your email"
+                    required
+                    class="email-field"
+                  />
+
+                  <button type="submit" class="form-btn">
+                    <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+                  </button>
+                </form>
+              </div>
+
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-list-title">"Discover the Perfect Ride!"</p>
+                </li>
+
+                <li>
+                  <a href="#" class="footer-link">Home</a>
+                </li>
+
+                <li>
+                  <a href="#about" class="footer-link">About</a>
+                </li>
+
+                <li>
+                  <a href="#feature" class="footer-link">Features</a>
+                </li>
+                <li>
+                  <a href="#footer" class="footer-link">Contact Us</a>
+                </li>
+              </ul>
+
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-list-title">Our features</p>
+                </li>
+
+                <li>
+                  <a href="#" class="footer-link"> Sleek and Stylish Design</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer-link">Advanced Performance</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer-link"> Durable Build</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer-link"> Comfortable Ergonomics</a>
+                </li>
+              </ul>
+
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-list-title">Contact Us</p>
+                </li>
+
+                <li class="footer-item">
+                  <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+                  <address class="contact-link address">Bicycles World</address>
+                </li>
+
+                <li class="footer-item">
+                  <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+                  <a href="tel:+91 999999999" class="contact-link"
+                    >+91 9876541230</a
+                  >
+                </li>
+
+                <li class="footer-item">
+                  <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+                  <a href="abhishekgupta26267@gmail.com" class="contact-link"
+                    >Bicycle@Zone.com</a
+                  >
+                </li>
+
+                <li class="footer-item">
+                  <ul class="social-list">
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="container">
+              <p class="copyright">
+                &copy; 2023 | All Rights Reserved by
+                <a href="#" class="copyright-link">Bicycles Zone</a>
+              </p>
+              <p class="copyright">
+                Developed With ❤️ by
+                <a
+                  href="https://www.linkedin.com/in/abhishek-g-996b40217/"
+                  class="copyright-link"
+                  >Abhishek Gupta</a
+                >
+              </p>
+
+              <ul class="footer-bottom-list">
+                <li>
+                  <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-bottom-link">Terms of Use</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <!--- custom js link-->
+        <script src="./assets/js/script.js"></script>
+
+        <!--- ionicon link-->
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+          nomodule
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+      </article>
+    </main>
+  </body>
+</html>
